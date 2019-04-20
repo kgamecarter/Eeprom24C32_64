@@ -49,6 +49,9 @@
  * \brief Size of input TWI buffer.
  * This size is equal to BUFFER_LENGTH defined in Wire library (32 bytes).
  ******************************************************************************/
+#ifndef BUFFER_LENGTH
+#define BUFFER_LENGTH 32
+#endif
 #define EEPROM__RD_BUFFER_SIZE    BUFFER_LENGTH
 
 /**************************************************************************//**
